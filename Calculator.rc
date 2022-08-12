@@ -1,0 +1,257 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文（中华人民共和国） resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Calculator.rc2""  // 非 Microsoft Visual C++ 编辑资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Calculator.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 190, 109
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "关于 Calculator"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,17,15,20,20
+    LTEXT           "Calculator 1.0 版",IDC_STATIC,67,17,57,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2002",IDC_STATIC,29,82,64,8
+    DEFPUSHBUTTON   "确定",IDOK,117,75,50,16,WS_GROUP
+    LTEXT           "本软件支持 + , - , * , / , ^ , ! ,运算,支持 abs, lg, ln, sin, cos, tan, cot, sec, csc, arcsin, arccos, arctan 函数, pi e 为常量",
+                    IDC_STATIC,35,35,135,37
+    LTEXT           "程序设计:池梁",IDC_STATIC,39,69,44,8
+END
+
+IDD_CALCULATOR_DIALOG DIALOGEX 0, 0, 321, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Calculator"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CALCSTR,59,12,247,24,ES_MULTILINE | ES_LOWERCASE | 
+                    ES_AUTOHSCROLL | WS_HSCROLL
+    DEFPUSHBUTTON   "退出",IDCANCEL,277,148,34,13
+    EDITTEXT        IDC_RESULT,167,42,139,23,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_HSCROLL
+    DEFPUSHBUTTON   "计算",IDC_CALCULATE,14,42,49,21
+    LTEXT           "输入表达式:",IDC_STATIC,14,13,44,8
+    LTEXT           "计算结果:",IDC_STATIC,138,44,21,19
+    PUSHBUTTON      "清除",IDC_CLEAR,239,148,34,13
+    PUSHBUTTON      "转换计算结果形式",IDC_CHANGE,65,42,69,21
+    PUSHBUTTON      "pi",IDC_BTN_PI,130,85,19,11
+    PUSHBUTTON      "e",IDC_BTN_E,130,100,19,11
+    PUSHBUTTON      "1",IDC_BTN_1,210,85,19,11
+    PUSHBUTTON      "4",IDC_BTN_4,210,100,19,11
+    PUSHBUTTON      "2",IDC_BTN_2,235,85,19,11
+    PUSHBUTTON      "3",IDC_BTN_3,260,85,19,11
+    PUSHBUTTON      "5",IDC_BTN_5,235,100,19,11
+    PUSHBUTTON      "6",IDC_BTN_6,260,100,19,11
+    PUSHBUTTON      "7",IDC_BTN_7,210,115,19,11
+    PUSHBUTTON      "8",IDC_BTN_8,235,115,19,11
+    PUSHBUTTON      "0",IDC_BTN_0,210,130,19,11
+    PUSHBUTTON      "9",IDC_BTN_9,260,115,19,11
+    PUSHBUTTON      ".",IDC_BTN_POINT,235,130,19,11
+    PUSHBUTTON      "^",IDC_BTN_POWER,130,115,19,11
+    PUSHBUTTON      "+",IDC_BTN_ADD,285,85,19,11
+    PUSHBUTTON      "-",IDC_BTN_MINUS,285,100,19,11
+    PUSHBUTTON      "*",IDC_BTN_MULTIPLY,285,115,19,11
+    PUSHBUTTON      "/",IDC_BTN_DIVIDE,285,130,19,11
+    PUSHBUTTON      "(",IDC_BTN_LBRACKET,155,130,19,11
+    PUSHBUTTON      ")",IDC_BTN_RBRACKET,180,130,19,11
+    PUSHBUTTON      "sin",IDC_BTN_SIN,180,85,19,11
+    PUSHBUTTON      "cos",IDC_BTN_COSINE,180,100,19,11
+    PUSHBUTTON      "tan",IDC_BTN_TAN,180,115,19,11
+    PUSHBUTTON      "!",IDC_BTN_FACTOR,130,130,19,11
+    PUSHBUTTON      "abs",IDC_BTN_ABS,155,85,19,11
+    PUSHBUTTON      "lg",IDC_BTN_LG,155,100,19,11
+    PUSHBUTTON      "ln",IDC_BTN_LN,155,115,19,11
+    PUSHBUTTON      "+/-",IDC_BTN_PLUSORMINUS,260,130,19,11
+    PUSHBUTTON      "退格",IDC_BTN_BACKSPACE,164,148,34,13
+    GROUPBOX        "",IDC_STATIC,207,78,102,66
+    PUSHBUTTON      "切换",IDC_BTN_SHIFT,126,148,34,13
+    CONTROL         130,IDB_LOGO,"Static",SS_BITMAP | SS_REALSIZEIMAGE,14,85,
+                    107,57,WS_EX_ACCEPTFILES | WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,126,78,78,66
+    PUSHBUTTON      "撤消",IDC_BTN_UNDO,201,148,34,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TYPHOON"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Calculator.exe"
+            VALUE "LegalCopyright", "TYPHOON 保留所有权利。"
+            VALUE "OriginalFilename", "Calculator.exe"
+            VALUE "ProductName", "迷你计算器"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_CALCULATOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 170
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\Calculator.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP                  "res\\Logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Calculator(&A)..."
+END
+
+#endif    // 中文（中华人民共和国） resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Calculator.rc2"  // 非 Microsoft Visual C++ 编辑资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
